@@ -1,6 +1,7 @@
 import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
+import { environmentVarsComponent } from "./concepts/01-environment-vars";
 
 document.querySelector("#app").innerHTML = /* html */ `
   <div>
@@ -15,3 +16,5 @@ document.querySelector("#app").innerHTML = /* html */ `
     </div>
   </div>
 `;
+
+environmentVarsComponent(".card");
