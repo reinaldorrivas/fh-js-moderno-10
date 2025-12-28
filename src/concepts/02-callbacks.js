@@ -28,6 +28,8 @@ export const callbacksComponent = (elementName) => {
   const id = "5d86371f1efebc31def272e2";
 
   const callback = (error, hero) => {
+    const element = document.body.querySelector(elementName);
+
     if (error) {
       element.innerHTML = error;
       return;
@@ -37,7 +39,6 @@ export const callbacksComponent = (elementName) => {
      * Ejemplo manejo de errores:
      * element.innerHTML = hero?.name || "Hero not found."
      */
-    const element = document.body.querySelector(elementName);
     element.innerHTML = hero.name;
   };
 
