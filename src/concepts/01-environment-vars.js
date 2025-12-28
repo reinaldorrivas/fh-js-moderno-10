@@ -1,6 +1,6 @@
 /**
  *
- * @param {string} element
+ * @param {string} elementName
  */
 export const environmentVarsComponent = (elementName) => {
   console.log(import.meta.env);

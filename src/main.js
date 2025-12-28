@@ -2,6 +2,7 @@ import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
 import { environmentVarsComponent } from "./concepts/01-environment-vars";
+import { callbacksComponent } from "./concepts/02-callbacks";
 
 document.querySelector("#app").innerHTML = /* html */ `
   <div>
@@ -17,4 +18,5 @@ document.querySelector("#app").innerHTML = /* html */ `
   </div>
 `;
 
-environmentVarsComponent(".card");
+// environmentVarsComponent(".card");
+callbacksComponent(".card");
