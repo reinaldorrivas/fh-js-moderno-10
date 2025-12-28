@@ -1,7 +1,7 @@
 import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
-import { environmentVarsComponent } from "./concepts/01-environment-vars";
+import { environmentVarsComponent } from "./concepts/01-environmentVars";
 import { callbacksComponent } from "./concepts/02-callbacks";
 
 document.querySelector("#app").innerHTML = /* html */ `
