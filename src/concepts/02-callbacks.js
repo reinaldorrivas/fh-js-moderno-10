@@ -3,16 +3,21 @@ import { heroes } from "../data/heroes";
 /**
  *
  * @param {string} id
- * @param {(hero) => void} callback
+ * @param {(error: string | null, hero: object) => void} callback
  */
 const findHero = (id, callback) => {
   if (!id) throw new Error("An ID is required.");
+
   if (typeof callback !== "function")
-    throw new Error("A callback is required.");
+    throw new Error("A callback function is required.");
 
   const hero = heroes.find((hero) => hero.id === id);
 
-  callback(hero);
+  if (!hero) {
+    callback(`Hero with id ${id} not found.`);
+  }
+
+  callback(null, hero);
 };
 
 /**
@@ -22,7 +27,16 @@ const findHero = (id, callback) => {
 export const callbacksComponent = (elementName) => {
   const id = "5d86371f1efebc31def272e2";
 
-  const callback = (hero) => {
+  const callback = (error, hero) => {
+    if (error) {
+      element.innerHTML = error;
+      return;
+    }
+
+    /*
+     * Ejemplo manejo de errores:
+     * element.innerHTML = hero?.name || "Hero not found."
+     */
     const element = document.body.querySelector(elementName);
     element.innerHTML = hero.name;
   };
