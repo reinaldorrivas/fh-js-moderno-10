@@ -3,6 +3,7 @@ import { callbacksComponent } from "./concepts/02-callbacks";
 import { callbackHellComponent } from "./concepts/03-callbackHell";
 import { promisesComponent } from "./concepts/04-promises";
 import { promiseHellComponent } from "./concepts/05-promiseHell";
+import { promiseRaceComponent } from "./concepts/06-promiseRace";
 import { elementHTML } from "./constants/globals";
 import javascriptLogo from "./javascript.svg";
 import "./style.css";
@@ -26,4 +27,5 @@ document.querySelector("#app").innerHTML = /* html */ `
 // callbacksComponent(elementHTML);
 // callbackHellComponent(elementHTML);
 // promisesComponent(elementHTML);
-promiseHellComponent(elementHTML)
+// promiseHellComponent(elementHTML);
+promiseRaceComponent(elementHTML);
