@@ -26,9 +26,9 @@ const findHero = (id, callback) => {
  */
 export const callbacksComponent = (elementName) => {
   const id = "5d86371f1efebc31def272e2";
+  const element = document.body.querySelector(elementName);
 
   const callback = (error, hero) => {
-    const element = document.body.querySelector(elementName);
 
     if (error) {
       element.innerHTML = error;

@@ -3,7 +3,8 @@
  * @param {string} elementName
  */
 export const environmentVarsComponent = (elementName) => {
-  console.log(import.meta.env);
+  console.log("Variables existentes en el <<.env>>: ", import.meta.env);
+
   const element = document.body.querySelector(elementName);
   const htmlTemplate = /* html */ `
       <section>

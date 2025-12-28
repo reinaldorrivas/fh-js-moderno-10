@@ -3,5 +3,5 @@
  * @param {string} element
  */
 export const demoComponent = (elementName) => {
-  console.log("demoComponent");
+  const element = document.body.querySelector(elementName);
 };
