@@ -36,6 +36,7 @@ export const promiseRaceComponent = (elementName) => {
     `;
   };
 
+  // * Puedes hacer que varios endpoints compitan y usar el que responda primero.
   Promise.race([slowPromise(), mediumPromise(), fastPromise()]).then(
     renderValue
   );
