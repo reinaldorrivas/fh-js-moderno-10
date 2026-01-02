@@ -40,10 +40,13 @@ export const callbackHellComponent = (elementName) => {
         return;
       }
 
-      element.innerHTML = `${firstHero.name} / ${secondHero.name}`;
+      element.innerHTML = /* html */ `
+        <h2>Heroes:</h2>
+        <p>${firstHero.name} / ${secondHero.name}<p>
+      `;
     };
 
-    findHero(ids[1], secondCallback)
+    findHero(ids[1], secondCallback);
   };
 
   findHero(ids[0], firstCallback);

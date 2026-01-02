@@ -8,7 +8,10 @@ export const asyncComponent = (elementName) => {
   const element = document.body.querySelector(elementName);
   const id = "5d86371f233c9f2425f16916";
 
-  const renderHTML = (content) => (element.innerHTML = content);
+  const renderHTML = (content) => (element.innerHTML = /* html */ `
+    <h2>Hero:</h2>
+    <p>${content}</p>
+  `);
 
   findHero(id).then(renderHTML).catch(renderHTML);
 };
