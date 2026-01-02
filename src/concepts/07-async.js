@@ -2,6 +2,21 @@ import { heroes } from "../data/heroes";
 
 /**
  *
+ * @param {string} id
+ * @returns {Promise<string>}
+ */
+const findHero = async (id) => {
+  const hero = heroes.find((hero) => hero.id === id);
+
+  if (!hero)
+    throw new Error(`Hero with id ${id} not found`);
+
+
+  return hero.name;
+};
+
+/**
+ *
  * @param {string} element
  */
 export const asyncComponent = (elementName) => {
@@ -14,19 +29,4 @@ export const asyncComponent = (elementName) => {
   `);
 
   findHero(id).then(renderHTML).catch(renderHTML);
-};
-
-/**
- *
- * @param {string} id
- * @returns {Promise<string>}
- */
-const findHero = async (id) => {
-  const hero = heroes.find((hero) => hero.id === id);
-
-  if (!hero)
-    throw new Error(`Hero with id ${id} not found`);
-
-
-  return hero.name;
 };

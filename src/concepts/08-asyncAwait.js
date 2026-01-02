@@ -24,6 +24,9 @@ export const asyncAwaitComponent = async (elementName) => {
   const secondID = "5d86371fd55e2e2a30fe1cc2b1";
 
   try {
+    /*
+     * Si el valor de la segunda promesa depende de la primera, esta aproximación sería la ideal.
+     */
     const firstHero = await findHero(firstID);
     const secondHero = await findHero(secondID);
 
