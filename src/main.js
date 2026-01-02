@@ -5,6 +5,7 @@ import { promisesComponent } from "./concepts/04-promises";
 import { promiseHellComponent } from "./concepts/05-promiseHell";
 import { promiseRaceComponent } from "./concepts/06-promiseRace";
 import { asyncComponent } from "./concepts/07-async";
+import { asyncAwaitComponent } from "./concepts/08-asyncAwait";
 import { elementHTML } from "./constants/globals";
 import javascriptLogo from "./javascript.svg";
 import "./style.css";
@@ -30,4 +31,5 @@ document.querySelector("#app").innerHTML = /* html */ `
 // promisesComponent(elementHTML);
 // promiseHellComponent(elementHTML);
 // promiseRaceComponent(elementHTML);
-asyncComponent(elementHTML);
+// asyncComponent(elementHTML);
+asyncAwaitComponent(elementHTML);
