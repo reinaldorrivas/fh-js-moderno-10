@@ -8,7 +8,7 @@ import { asyncComponent } from "./concepts/07-async";
 import { asyncAwaitComponent } from "./concepts/08-asyncAwait";
 import { asyncAwaitOptimizationsComponent } from "./concepts/09-asyncAwaitOptimizations";
 import { ifAwaitAndForAwaitComponent } from "./concepts/10-ifAwaitAndForAwait";
-import { generatorsComponent } from "./concepts/11-generators";
+import { generatorFunctionsIntroComponent } from "./concepts/11-generatorFunctionsIntro";
 import { elementHTML } from "./constants/globals";
 import javascriptLogo from "./javascript.svg";
 import "./style.css";
@@ -38,4 +38,4 @@ document.querySelector("#app").innerHTML = /* html */ `
 // asyncAwaitComponent(elementHTML);
 // asyncAwaitOptimizationsComponent(elementHTML);
 // ifAwaitAndForAwaitComponent(elementHTML);
-generatorsComponent();
+generatorFunctionsIntroComponent();

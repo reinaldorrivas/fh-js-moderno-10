@@ -2,7 +2,7 @@
  *
  * @param {string} element
  */
-export const generatorsComponent = () => {
+export const generatorFunctionsIntroComponent = () => {
   const myGenerator = myFirstGeneratorFunction();
 
   console.log(myGenerator.next());
