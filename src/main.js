@@ -38,4 +38,4 @@ document.querySelector("#app").innerHTML = /* html */ `
 // asyncAwaitComponent(elementHTML);
 // asyncAwaitOptimizationsComponent(elementHTML);
 // ifAwaitAndForAwaitComponent(elementHTML);
-generatorFunctionsIntroComponent();
+generatorFunctionsIntroComponent(elementHTML);
