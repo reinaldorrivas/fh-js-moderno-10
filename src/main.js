@@ -6,6 +6,8 @@ import { promiseHellComponent } from "./concepts/05-promiseHell";
 import { promiseRaceComponent } from "./concepts/06-promiseRace";
 import { asyncComponent } from "./concepts/07-async";
 import { asyncAwaitComponent } from "./concepts/08-asyncAwait";
+import { asyncAwaitOptimizationsComponent } from "./concepts/09-asyncAwaitOptimizations";
+import { ifAwaitAndForAwaitComponent } from "./concepts/10-ifAwaitAndForAwait";
 import { elementHTML } from "./constants/globals";
 import javascriptLogo from "./javascript.svg";
 import "./style.css";
@@ -32,4 +34,6 @@ document.querySelector("#app").innerHTML = /* html */ `
 // promiseHellComponent(elementHTML);
 // promiseRaceComponent(elementHTML);
 // asyncComponent(elementHTML);
-asyncAwaitComponent(elementHTML);
+// asyncAwaitComponent(elementHTML);
+// asyncAwaitOptimizationsComponent(elementHTML);
+ifAwaitAndForAwaitComponent(elementHTML);
