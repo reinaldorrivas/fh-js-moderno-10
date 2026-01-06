@@ -1,5 +1,3 @@
-import { heroes } from "../data/heroes";
-
 const slowPromise = () =>
   new Promise((resolve, reject) => {
     setTimeout(() => {

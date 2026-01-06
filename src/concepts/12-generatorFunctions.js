@@ -1,8 +1,15 @@
+function* idGenerator() {
+  let currentID = 0;
+  while (true) {
+    yield ++currentID;
+  }
+}
+
 /**
  *
  * @param {string} element
  */
-export const generatorFunctions = (elementName) => {
+export const generatorFunctionsComponent = (elementName) => {
   const element = document.body.querySelector(elementName);
   const uuid = idGenerator();
 
@@ -15,10 +22,3 @@ export const generatorFunctions = (elementName) => {
     button.textContent = `Click: ${value}`;
   });
 };
-
-function* idGenerator() {
-  let currentID = 0;
-  while (true) {
-    yield ++currentID;
-  }
-}
