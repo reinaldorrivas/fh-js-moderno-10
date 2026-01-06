@@ -9,7 +9,8 @@ import { asyncAwaitComponent } from "./concepts/08-asyncAwait";
 import { asyncAwaitOptimizationsComponent } from "./concepts/09-asyncAwaitOptimizations";
 import { ifAwaitAndForAwaitComponent } from "./concepts/10-ifAwaitAndForAwait";
 import { generatorFunctionsIntroComponent } from "./concepts/11-generatorFunctionsIntro";
-import { generatorFunctions } from "./concepts/12-generatorFunctions";
+import { generatorFunctionsComponent } from "./concepts/12-generatorFunctions";
+import { asyncGeneratorFunctionsComponent } from "./concepts/13-asyncGeneratorFunctions";
 import { elementHTML } from "./constants/globals";
 import javascriptLogo from "./javascript.svg";
 import "./style.css";
@@ -40,4 +41,5 @@ document.querySelector("#app").innerHTML = /* html */ `
 // asyncAwaitOptimizationsComponent(elementHTML);
 // ifAwaitAndForAwaitComponent(elementHTML);
 // generatorFunctionsIntroComponent(elementHTML);
-generatorFunctions(elementHTML);
+// generatorFunctionsComponent(elementHTML);
+asyncGeneratorFunctionsComponent(elementHTML);
